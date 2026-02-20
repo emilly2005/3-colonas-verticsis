@@ -1,0 +1,94 @@
+:root {
+--Gold-500: hsl(31, 77%, 52%);
+--Cyan-800: hsl(184, 100%, 22%);
+--Green-950: hsl(179, 100%, 13%);
+--Transparent-white: hsla(0, 0%, 100%, 0.75);
+--Gray-100 : hsl(0, 0%, 95%);
+}
+
+@import url(https://fonts.google.com/specimen/Lexend+Deca?query=lexend+deca);
+
+@import url(https://fonts.google.com/specimen/Big+Shoulders+Display?query=big+shoulders+display);
+
+body {
+    background-color: var(--Transparent-white);
+     display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-size: 15px;
+}
+
+.container {
+   display: flex;
+    width: 700px;
+    height: 350px;
+    text-align: left;
+    align-items: center;
+}
+
+.sedans {
+    background-color: var(--Gold-500);
+    padding: 25px;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.suvs {
+  background-color: var(--Cyan-800);
+  padding: 25px;
+}
+
+.luxury {
+    background-color: var(--Green-950);
+    padding: 25px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+button {
+    background-color: var(--Gray-100);
+    border: none;
+    border-radius: 30px;
+    padding: 11px 30px ;
+    font-weight: 600;
+    margin:0 auto;
+}
+
+.lu {
+    color:var(--Green-950);
+}
+
+.su {
+    color: var(--Cyan-800);
+}
+
+.sed {
+    color: var(--Gold-500);
+}
+
+h1 {
+    color:var(--Gray-100);
+    font-family: 'lexend deca', sans-serif;
+    font-weight: 700;
+}
+
+p {
+    font-family: 'lexend deca', sans-serif;
+    font-weight: 400;
+    color: var(--Transparent-white);
+}
+
+img {
+    width: 30%;
+}
+
+@media screen and (max-width: 708px) {
+    .container {
+        flex-direction: column;
+         width: 300px;
+        height: 300px;
+        
+    }
+
+    
+}
+
